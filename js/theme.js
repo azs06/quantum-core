@@ -1,7 +1,8 @@
 jQuery(document).ready(function($){
     $('.search-form').addClass('pure-form');
     $('form').addClass('pure-form pure-form-stacked');
-    $('.menu-item-has-children').addClass('has-sub');
+    $('.page-menu').attr('id','cssmenu');
+    $('.menu-item-has-children, .page_item_has_children').addClass('has-sub');
     $('.nav-toggle').click(function(e){
     $('#main-menu').toggleClass('active');
     e.preventDefault();

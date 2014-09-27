@@ -45,9 +45,10 @@ $defaults = array(
 	'container_id'    => 'cssmenu',
 	'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
 );
-
-wp_nav_menu( $defaults );
-
+if(has_nav_menu('primary'))
+{ wp_nav_menu( $defaults ); }
+else 
+	{ wp_page_menu( array('menu_class'  => 'page-menu') ); }
 ?>
 </div>
 

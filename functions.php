@@ -63,7 +63,7 @@ function quantum_core_setup() {
 
 	// Setup the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'quantum_core_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => '303030',
 		'default-image' => '',
 	) ) );
 }
@@ -100,6 +100,8 @@ function quantum_core_scripts() {
 
     $wp_scripts->add_data('html5_shiv','conditional','lt IE9');
     $wp_scripts->add_data('respond','conditional','lt IE9');
+
+    wp_enqueue_style( 'quantum-core-resetcss',get_template_directory_uri(). '/css/reset.css' );
 
 	wp_enqueue_style( 'quantum-core-style', get_stylesheet_uri() );
 

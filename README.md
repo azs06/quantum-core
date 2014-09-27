@@ -17,4 +17,5 @@ Fully responsive theme, with an app like menu for mobile devices.
 This tutorial from tutsplus was a big help, while adding new settings to theme customizer.
 https://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
 
+A demo of the theme can be seen here http://quantum.theazs.com/
 
