@@ -33,4 +33,10 @@
 			}
 		} );
 	} );
+
+	wp.customize('quantum_footer_text',function( value ) {
+					value.bind(function(to) {
+						$('footer .site-info').html(to);
+					});
+				});
 } )( jQuery );

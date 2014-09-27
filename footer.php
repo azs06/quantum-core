@@ -13,9 +13,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'quantum-core' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'quantum-core' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'quantum-core' ), 'Quantum-core', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
+	<?php echo esc_html(get_theme_mod( 'quantum_footer_text', 'Created with WordPress' )); ?>		
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 	</div><!-- #container -->

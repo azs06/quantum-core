@@ -200,3 +200,8 @@ function new_excerpt_more( $more ) {
 	return ' .... <a class="button-read-more pure-button " href="'. get_permalink( get_the_ID() ) . '">' . __('Read More', 'your-text-domain') . '</a>';
 }
 add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+function quantum_core_add_editor_styles() {
+    add_editor_style( get_template_directory_uri(). '/css/editor-style.css' );
+}
+add_action( 'after_setup_theme', 'quantum_core_add_editor_styles' );
