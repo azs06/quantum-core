@@ -92,6 +92,15 @@ add_action( 'widgets_init', 'quantum_core_widgets_init' );
  * Enqueue scripts and styles.
  */
 function quantum_core_scripts() {
+
+	global $wp_scripts;
+
+	wp_register_script('html5_shiv','https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js','','',false);
+    wp_register_script('respond','https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js','','',false);
+
+    $wp_scripts->add_data('html5_shiv','conditional','lt IE9');
+    $wp_scripts->add_data('respond','conditional','lt IE9');
+
 	wp_enqueue_style( 'quantum-core-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'quantum-core-purecss',get_template_directory_uri(). '/css/pure-min.css' );
