@@ -19,3 +19,4 @@ https://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-3
 
 A demo of the theme can be seen here http://quantum.theazs.com/
 
+[ ![Codeship Status for azs06/quantum-core](https://www.codeship.io/projects/ff153bb0-dc9b-0131-d106-5a597baa96f6/status)](https://www.codeship.io/projects/24556)
